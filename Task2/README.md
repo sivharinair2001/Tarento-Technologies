@@ -1,4 +1,4 @@
-### Task 2: 
+### Task 2 : 
 1. Forking a Repository: 
     Fork a repository on GitHub. 
     You can refer to this sample repo to fork: https://github.com/octocat/Hello-World.
