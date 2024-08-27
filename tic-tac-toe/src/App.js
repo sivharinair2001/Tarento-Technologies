@@ -22,8 +22,6 @@ function App() {
   const [board, setBoard] = useState(Array(9).fill(null));
   const [xPlaying, setXPlaying] = useState(true);
   const [gameOver, setGameOver] = useState(false);
-  const [matchesPlayed, setMatchesPlayed] = useState(0);
-  const [overallWinner, setOverallWinner] = useState(null);
 
   const handleBoxClick = (blockIndex) =>{
     const updatedBoard = board.map((value, index) =>{
@@ -74,6 +72,7 @@ function App() {
     <div className="App">
       <ScoreBoard score={score} xPlaying={xPlaying}/>
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick}/>
+      <ResetButton resetBoard={resetBoard}/>
     </div>
   );
 }
